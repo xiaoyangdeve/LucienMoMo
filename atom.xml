@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kiseayoung.com/"/>
-  <updated>2019-09-25T14:13:10.000Z</updated>
+  <updated>2019-10-11T14:29:53.276Z</updated>
   <id>https://kiseayoung.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>二零一七年终总结</title>
-    <link href="https://kiseayoung.com/2018/01/22/2017-conclusion/"/>
-    <id>https://kiseayoung.com/2018/01/22/2017-conclusion/</id>
-    <published>2018-01-22T04:32:09.000Z</published>
-    <updated>2019-09-25T14:13:10.000Z</updated>
+    <title>hive-monitor检测服务设计与实现</title>
+    <link href="https://kiseayoung.com/2019/09/23/hive-monitor-jian-ce-fu-wu-she-ji-yu-shi-xian/"/>
+    <id>https://kiseayoung.com/2019/09/23/hive-monitor-jian-ce-fu-wu-she-ji-yu-shi-xian/</id>
+    <published>2019-09-23T09:00:00.000Z</published>
+    <updated>2019-10-11T14:29:53.276Z</updated>
     
     <summary type="html">
     
@@ -35,10 +35,12 @@
     
     </summary>
     
-      <category term="随笔" scheme="https://kiseayoung.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
+      <category term="Hive" scheme="https://kiseayoung.com/tags/Hive/"/>
     
-      <category term="随笔" scheme="https://kiseayoung.com/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="Java" scheme="https://kiseayoung.com/tags/Java/"/>
+    
+      <category term="kotlin" scheme="https://kiseayoung.com/tags/kotlin/"/>
     
   </entry>
   

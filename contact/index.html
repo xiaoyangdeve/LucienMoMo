@@ -309,12 +309,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <div class="card-content">
                 <div class="card-content article-card-content">
                     <div id="articleContent" data-aos="fade-up">
-                        <h1 id="欢迎留言"><a href="#欢迎留言" class="headerlink" title="欢迎留言"></a>欢迎留言</h1><p>大家有任何问题，都可以在评论区给我留言，或者加我联系方式：</p>
-<ul>
-<li>QQ：<strong>792321264</strong></li>
-<li>微信：<strong>weiyang792321264</strong></li>
-</ul>
-<p>我很忙啦，如果不是很麻烦的问题就直接在评论区留言啦。<br><strong>当然不介意小改改加我哦~~</strong></p>
+                        <h1 id="欢迎留言"><a href="#欢迎留言" class="headerlink" title="欢迎留言"></a>欢迎留言</h1><p>大家有任何问题，都可以在评论区给我留言，*</p>
 <h1 id="友链交换"><a href="#友链交换" class="headerlink" title="友链交换"></a>友链交换</h1><p>想要交换友链的小伙伴，欢迎在评论区留言，留言格式：</p>
 <ul>
 <li><strong>名称：</strong>你的博客名称</li>
@@ -324,10 +319,9 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 </ul>
 <p>例如我的博客友链，大家可以加到自己博客里哦：</p>
 <ul>
-<li><strong>名称：</strong>godweiyang</li>
-<li><strong>地址：</strong><a href="https://godweiyang.com">https://godweiyang.com</a></li>
-<li><strong>简介：</strong>ECNU NLPer</li>
-<li><strong>头像：</strong><a href="https://godweiyang.com/medias/avatars/avatar.jpg">https://godweiyang.com/medias/avatars/avatar.jpg</a></li>
+<li><strong>名称：</strong>kiseayoung</li>
+<li><strong>地址：</strong><a href="https://kiseayoung.com">https://kiseayoung.com</a></li>
+<li><strong>简介：</strong>Data engineer</li>
 </ul>
 
                     </div>
@@ -336,6 +330,28 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         </div>
         <div class="card">
 
+            
+            <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '035082ae797ad8fe5406',
+        clientSecret: '62081b8671ffacce93b66cebfbb24322b9e723aa',
+        repo: 'LucienMoMo.github.io/young.github.io',
+        owner: 'LucienMoMo',
+        admin: "LucienMoMo",
+        id: 'contact/index.html',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
             
 
             
@@ -614,11 +630,11 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            &copy; 2019 WeiYang. All Rights Reserved.
+            &copy; 2019 KiseaYoung. All Rights Reserved.
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">1.1k</span>
+            <span class="white-color">1.7k</span>
             
 
             <br>
@@ -655,7 +671,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 
 
-    <a href="https://user.qzone.qq.com/792321264" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+    <a href="https://user.qzone.qq.com/375080708" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
         <i class="fa fa-qq"></i>
     </a>
 
@@ -677,9 +693,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     $(document).ready(function () {
 
         var int = setInterval(fixCount, 50);
-        var pvcountOffset = 80000;
-        var uvcountOffset = 20000;
-
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
         function fixCount() {
             if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
                 $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
@@ -716,7 +731,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2017, 09, 11, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(2019, 10, 10, 00, 00, 00); //北京时间2018-2-13 00:00:00
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
@@ -789,8 +804,6 @@ $(function () {
     
 
     <!-- 雪花特效 -->
-    
-    <script type="text/javascript" src="/libs/others/snow.js"></script>
     
 
 </body>

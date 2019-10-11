@@ -289,7 +289,7 @@
                         404
                     </div>
                     <div class="description center-align">
-                        你来到了没有知识的荒原 :(
+                        咦，她好像不见了呢 :(
                     </div>
                 </div>
             </div>
@@ -304,11 +304,11 @@
     <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            &copy; 2019 WeiYang. All Rights Reserved.
+            &copy; 2019 KiseaYoung. All Rights Reserved.
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">1.1k</span>
+            <span class="white-color">1.7k</span>
             
 
             <br>
@@ -345,7 +345,7 @@
 
 
 
-    <a href="https://user.qzone.qq.com/792321264" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+    <a href="https://user.qzone.qq.com/375080708" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
         <i class="fa fa-qq"></i>
     </a>
 
@@ -367,9 +367,8 @@
     $(document).ready(function () {
 
         var int = setInterval(fixCount, 50);
-        var pvcountOffset = 80000;
-        var uvcountOffset = 20000;
-
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
         function fixCount() {
             if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
                 $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
@@ -406,7 +405,7 @@
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2017, 09, 11, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(2019, 10, 10, 00, 00, 00); //北京时间2018-2-13 00:00:00
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
@@ -479,8 +478,6 @@ $(function () {
     
 
     <!-- 雪花特效 -->
-    
-    <script type="text/javascript" src="/libs/others/snow.js"></script>
     
 
 </body>

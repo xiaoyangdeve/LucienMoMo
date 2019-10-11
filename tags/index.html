@@ -316,10 +316,28 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <div class="tag-chips">
                 
                 
-                <a href="/tags/随笔/" title="随笔: 1">
+                <a href="/tags/Hive/" title="Hive: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="随笔" style="background-color: #F9EBEA;">随笔
+                            data-tagname="Hive" style="background-color: #F9EBEA;">Hive
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Java/" title="Java: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Java" style="background-color: #F5EEF8;">Java
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/kotlin/" title="kotlin: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="kotlin" style="background-color: #D5F5E3;">kotlin
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -348,7 +366,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"随笔","weight":1,"link":"/tags/随笔/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"Hive","weight":1,"link":"/tags/Hive/"},{"text":"Java","weight":1,"link":"/tags/Java/"},{"text":"kotlin","weight":1,"link":"/tags/kotlin/"}], {
         autoResize: true
     });
 </script>
@@ -359,11 +377,11 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            &copy; 2019 WeiYang. All Rights Reserved.
+            &copy; 2019 KiseaYoung. All Rights Reserved.
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">1.1k</span>
+            <span class="white-color">1.7k</span>
             
 
             <br>
@@ -400,7 +418,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 
 
-    <a href="https://user.qzone.qq.com/792321264" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
+    <a href="https://user.qzone.qq.com/375080708" class="tooltipped" target="_blank" data-tooltip="访问我的QQ空间" data-position="top" data-delay="50">
         <i class="fa fa-qq"></i>
     </a>
 
@@ -422,9 +440,8 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
     $(document).ready(function () {
 
         var int = setInterval(fixCount, 50);
-        var pvcountOffset = 80000;
-        var uvcountOffset = 20000;
-
+        var pvcountOffset = 0;
+        var uvcountOffset = 0;
         function fixCount() {
             if (document.getElementById("busuanzi_container_site_pv").style.display != "none") {
                 $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + pvcountOffset);
@@ -461,7 +478,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2017, 09, 11, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t1 = Date.UTC(2019, 10, 10, 00, 00, 00); //北京时间2018-2-13 00:00:00
         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
         var diff = t2 - t1;
         var diffYears = Math.floor(diff / years);
@@ -534,8 +551,6 @@ $(function () {
     
 
     <!-- 雪花特效 -->
-    
-    <script type="text/javascript" src="/libs/others/snow.js"></script>
     
 
 </body>
