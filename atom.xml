@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kiseayoung.com/"/>
-  <updated>2019-10-11T14:29:53.276Z</updated>
+  <updated>2019-10-12T16:55:35.651Z</updated>
   <id>https://kiseayoung.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://kiseayoung.com/2019/09/23/hive-monitor-init/"/>
     <id>https://kiseayoung.com/2019/09/23/hive-monitor-init/</id>
     <published>2019-09-23T09:00:00.000Z</published>
-    <updated>2019-10-11T14:29:53.276Z</updated>
+    <updated>2019-10-12T16:55:35.651Z</updated>
     
     <summary type="html">
     
@@ -34,6 +34,12 @@
       
     
     </summary>
+    
+      <category term="Hive" scheme="https://kiseayoung.com/categories/Hive/"/>
+    
+      <category term="Java" scheme="https://kiseayoung.com/categories/Hive/Java/"/>
+    
+      <category term="kotlin" scheme="https://kiseayoung.com/categories/Hive/Java/kotlin/"/>
     
     
       <category term="Hive" scheme="https://kiseayoung.com/tags/Hive/"/>

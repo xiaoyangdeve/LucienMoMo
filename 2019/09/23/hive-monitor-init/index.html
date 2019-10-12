@@ -9,8 +9,9 @@
     <meta name="google-site-verification" content>
     <meta name="360-site-verification" content>
     <meta name="description" content="
+# 背景
 
-背景在日常开发工作中，在服务器上运行的每个任务的运行结果及详情，是我们需要关心的，在数据仓库的建设开发中，我们需要更早更准确的知道数据同步、仓库建设等任务是否成功，及结果是否符合预期，特别是在任务发生异常的时候可以更快的定位分析和解决，">
+在日常开发工作中，在服务器上运行的每个任务的运行结果及详情，是我们需要关心的，在数据仓库的建设开发中，我们需要更早更准确的知道数据同步、仓库建设等任务是否成功，及结果是否符合预期，特别是在任务发生异常的时候可以更快的定位分析和">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -292,7 +293,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -426,6 +427,23 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/Hive/" class="post-category" target="_blank">
+                            Hive
+                        </a>
+                        
+                        <a href="/categories/Hive/Java/" class="post-category" target="_blank">
+                            Java
+                        </a>
+                        
+                        <a href="/categories/Hive/Java/kotlin/" class="post-category" target="_blank">
+                            kotlin
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
@@ -470,8 +488,9 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <div align="middle"><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=407679465&auto=1&height=66"></iframe></div>
+# 背景
 
-<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>在日常开发工作中，在服务器上运行的每个任务的运行结果及详情，是我们需要关心的，在数据仓库的建设开发中，我们需要更早更准确的知道数据同步、仓库建设等任务是否成功，及结果是否符合预期，特别是在任务发生异常的时候可以更快的定位分析和解决，以保证提供给下游和业务人员的数据是准确的。</p>
+<p>在日常开发工作中，在服务器上运行的每个任务的运行结果及详情，是我们需要关心的，在数据仓库的建设开发中，我们需要更早更准确的知道数据同步、仓库建设等任务是否成功，及结果是否符合预期，特别是在任务发生异常的时候可以更快的定位分析和解决，以保证提供给下游和业务人员的数据是准确的。</p>
 <p>现行的监控和告警系统中，主要依托于大数据生态圈中组件自身携带的功能，使得需要定制化服务的项目无法使用，需要单独进行开发，在数据仓库方向。目前主要依托于人工去检查任务是否成功，或是业务人员的反馈进行查验，主要的痛点在于不能够及时的发现异常甚至于一些较少人使用的数据不能发现异常，同时日常的手工检验工作耗费了大量的人力和精力。</p>
 <p>因此，经过调研，从互联网公司的一些需求及各位开发人员的使用经验出发，结合公司实际设计开发了现在的检测监控系统：hive-monitor。</p>
 <h1 id="整体设计"><a href="#整体设计" class="headerlink" title="整体设计"></a>整体设计</h1><p>hive-monitor系统开发语言选用Java和Kotlin，框架选用有Spring、SpringBoot、MyBatis、Vue、Quartz等。系统通过Vue+HTML的前端页面进行任务的添加、删除及任务调度的配置、执行和删除，同时对任务执行结果的展示和筛选，选用Quartz依赖其本身对任务调度的动态配置，后端服务通过Spring和MyBatis实现对任务的动态配置。任务在执行时会查询任务需要校验的字符串表达式，同时通过提供的prestoServer、hiveServer、hdfsServer接口对表达式中的每个元素进行赋值，将赋值后的表达式通过grovy脚本语言进行执行，判断其真假，最终将执行的结果通过已经实现的邮件发送和企业微信接口分别发送给需要提醒的人员。下面是系统的架构图：</p>
@@ -1060,7 +1079,7 @@ hive.name3.driverClassName=org.apache.hive.jdbc.HiveDriver<span aria-hidden="tru
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="hive-monitor检测服务设计与实现">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="hive-monitor检测服务设计与实现">
                         
                         <span class="card-title">hive-monitor检测服务设计与实现</span>
                     </div>
@@ -1068,9 +1087,7 @@ hive.name3.driverClassName=org.apache.hive.jdbc.HiveDriver<span aria-hidden="tru
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-背景在日常开发工作中，在服务器上运行的每个任务的运行结果及详情，是我们需要关心的，在数据仓库的建设开发中，我们需要更早更准确的知道数据同步、仓库建设等任务是否成功，及结果是否符合预期，特别是在任务发生异常的时候可以更快的定位分析和解决，
+                            以便于更早更准确的知道数据同步、仓库建设等任务是否成功，及结果是否符合预期。
                         
                     </div>
                     <div class="publish-info">
@@ -1078,6 +1095,21 @@ hive.name3.driverClassName=org.apache.hive.jdbc.HiveDriver<span aria-hidden="tru
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-23
                             </span>
                         <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hive/" class="post-category" target="_blank">
+                                    Hive
+                                </a>
+                            
+                            <a href="/categories/Hive/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                            
+                            <a href="/categories/Hive/Java/kotlin/" class="post-category" target="_blank">
+                                    kotlin
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -1113,7 +1145,7 @@ hive.name3.driverClassName=org.apache.hive.jdbc.HiveDriver<span aria-hidden="tru
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="hive-monitor检测服务设计与实现">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="hive-monitor检测服务设计与实现">
                         
                         <span class="card-title">hive-monitor检测服务设计与实现</span>
                     </div>
@@ -1121,9 +1153,7 @@ hive.name3.driverClassName=org.apache.hive.jdbc.HiveDriver<span aria-hidden="tru
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-
-背景在日常开发工作中，在服务器上运行的每个任务的运行结果及详情，是我们需要关心的，在数据仓库的建设开发中，我们需要更早更准确的知道数据同步、仓库建设等任务是否成功，及结果是否符合预期，特别是在任务发生异常的时候可以更快的定位分析和解决，
+                            以便于更早更准确的知道数据同步、仓库建设等任务是否成功，及结果是否符合预期。
                         
                     </div>
                     <div class="publish-info">
@@ -1131,6 +1161,21 @@ hive.name3.driverClassName=org.apache.hive.jdbc.HiveDriver<span aria-hidden="tru
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-23
                             </span>
                         <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Hive/" class="post-category" target="_blank">
+                                    Hive
+                                </a>
+                            
+                            <a href="/categories/Hive/Java/" class="post-category" target="_blank">
+                                    Java
+                                </a>
+                            
+                            <a href="/categories/Hive/Java/kotlin/" class="post-category" target="_blank">
+                                    kotlin
+                                </a>
+                            
                             
                         </span>
                     </div>
